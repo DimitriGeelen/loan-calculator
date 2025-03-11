@@ -2,6 +2,8 @@
 
 An interactive loan calculator with advanced features including balloon payment options, multiple currency support, and Excel export capabilities.
 
+![Loan Calculator Preview](screenshots/loan-calculator-preview.svg)
+
 ## Features
 
 - **Basic Loan Calculation**: Calculate monthly payments, total interest, and amortization schedules
