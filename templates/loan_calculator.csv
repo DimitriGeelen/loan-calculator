@@ -1,0 +1,20 @@
+Loan Calculator,,,,,
+,,,,,
+Loan Amount ($),250000,,,,
+Annual Interest Rate (%),4.5,,,,
+Loan Term (years),30,,,,
+Payments per Year,12,,,,
+Start Date,3/15/2025,,,,
+,,,,,
+RESULTS,,,,,
+Monthly Payment,=PMT(B4/B6/100, B5*B6, -B3),,,,
+Total Payments,=B10 * B5 * B6,,,,
+Total Interest,=B11-B3,,,,
+,,,,,
+AMORTIZATION SCHEDULE,,,,,
+Payment #,Date,Payment,Principal,Interest,Remaining Balance
+1,=EDATE(B7, A16),=$B$10,=C16-E16,=IF(A16=1, B3*$B$4/100/$B$6, F15*$B$4/100/$B$6),=IF(A16=1, B3-D16, F15-D16)
+2,=EDATE(B7, A17),=$B$10,=C17-E17,=F16*$B$4/100/$B$6,=F16-D17
+3,=EDATE(B7, A18),=$B$10,=C18-E18,=F17*$B$4/100/$B$6,=F17-D18
+4,=EDATE(B7, A19),=$B$10,=C19-E19,=F18*$B$4/100/$B$6,=F18-D19
+5,=EDATE(B7, A20),=$B$10,=C20-E20,=F19*$B$4/100/$B$6,=F19-D20
