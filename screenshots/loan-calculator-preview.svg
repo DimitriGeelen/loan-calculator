@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f9f9f9" rx="8" ry="8"/>
+  
+  <!-- Header -->
+  <text x="400" y="40" font-family="Arial" font-size="24" fill="#2c3e50" text-anchor="middle" font-weight="bold">Loan Calculator</text>
+  
+  <!-- Input Section -->
+  <rect x="50" y="60" width="700" height="160" fill="#ffffff" rx="8" ry="8" stroke="#ddd" stroke-width="1"/>
+  
+  <!-- Input Fields - Left Column -->
+  <text x="70" y="85" font-family="Arial" font-size="14" fill="#2c3e50" font-weight="bold">Loan Amount ($)</text>
+  <rect x="70" y="90" width="300" height="30" fill="#ffffff" stroke="#ddd" stroke-width="1" rx="4" ry="4"/>
+  <text x="85" y="110" font-family="Arial" font-size="14" fill="#333333">250,000</text>
+  
+  <text x="70" y="145" font-family="Arial" font-size="14" fill="#2c3e50" font-weight="bold">Loan Term (years)</text>
+  <rect x="70" y="150" width="300" height="30" fill="#ffffff" stroke="#ddd" stroke-width="1" rx="4" ry="4"/>
+  <text x="85" y="170" font-family="Arial" font-size="14" fill="#333333">30</text>
+  
+  <!-- Input Fields - Right Column -->
+  <text x="430" y="85" font-family="Arial" font-size="14" fill="#2c3e50" font-weight="bold">Annual Interest Rate (%)</text>
+  <rect x="430" y="90" width="300" height="30" fill="#ffffff" stroke="#ddd" stroke-width="1" rx="4" ry="4"/>
+  <text x="445" y="110" font-family="Arial" font-size="14" fill="#333333">4.5</text>
+  
+  <text x="430" y="145" font-family="Arial" font-size="14" fill="#2c3e50" font-weight="bold">Balloon Payment ($)</text>
+  <rect x="430" y="150" width="300" height="30" fill="#ffffff" stroke="#ddd" stroke-width="1" rx="4" ry="4"/>
+  <text x="445" y="170" font-family="Arial" font-size="14" fill="#333333">50,000</text>
+  
+  <!-- Buttons -->
+  <rect x="300" y="200" width="100" height="35" fill="#3498db" rx="4" ry="4"/>
+  <text x="350" y="223" font-family="Arial" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="bold">Calculate</text>
+  
+  <rect x="410" y="200" width="100" height="35" fill="#2ecc71" rx="4" ry="4"/>
+  <text x="460" y="223" font-family="Arial" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="bold">Export XLS</text>
+  
+  <!-- Results Section -->
+  <rect x="50" y="250" width="700" height="100" fill="#e8f4fc" rx="8" ry="8"/>
+  <text x="70" y="275" font-family="Arial" font-size="16" fill="#2c3e50" font-weight="bold">Results</text>
+  
+  <text x="70" y="300" font-family="Arial" font-size="14" fill="#2c3e50">Monthly Payment:</text>
+  <text x="210" y="300" font-family="Arial" font-size="14" fill="#2c3e50" font-weight="bold">$1,013.37</text>
+  
+  <text x="70" y="325" font-family="Arial" font-size="14" fill="#2c3e50">Total Interest:</text>
+  <text x="210" y="325" font-family="Arial" font-size="14" fill="#2c3e50" font-weight="bold">$214,815.20</text>
+  
+  <text x="350" y="300" font-family="Arial" font-size="14" fill="#2c3e50">Total Payments:</text>
+  <text x="490" y="300" font-family="Arial" font-size="14" fill="#2c3e50" font-weight="bold">$364,815.20</text>
+  
+  <text x="350" y="325" font-family="Arial" font-size="14" fill="#2c3e50">Balloon Payment:</text>
+  <text x="490" y="325" font-family="Arial" font-size="14" fill="#2c3e50" font-weight="bold">$50,000.00</text>
+  
+  <!-- Amortization Table -->
+  <text x="70" y="375" font-family="Arial" font-size="16" fill="#2c3e50" font-weight="bold">Amortization Schedule</text>
+  <rect x="50" y="385" width="700" height="95" fill="#ffffff" rx="8" ry="8" stroke="#ddd" stroke-width="1"/>
+  
+  <!-- Table Headers -->
+  <rect x="50" y="385" width="700" height="30" fill="#f2f2f2" rx="8" ry="8" stroke="#ddd" stroke-width="1"/>
+  <text x="70" y="405" font-family="Arial" font-size="12" fill="#2c3e50" font-weight="bold">Payment #</text>
+  <text x="150" y="405" font-family="Arial" font-size="12" fill="#2c3e50" font-weight="bold">Date</text>
+  <text x="270" y="405" font-family="Arial" font-size="12" fill="#2c3e50" font-weight="bold">Payment</text>
+  <text x="370" y="405" font-family="Arial" font-size="12" fill="#2c3e50" font-weight="bold">Principal</text>
+  <text x="470" y="405" font-family="Arial" font-size="12" fill="#2c3e50" font-weight="bold">Interest</text>
+  <text x="570" y="405" font-family="Arial" font-size="12" fill="#2c3e50" font-weight="bold">Extra Payment</text>
+  <text x="680" y="405" font-family="Arial" font-size="12" fill="#2c3e50" font-weight="bold">Balance</text>
+  
+  <!-- Table Rows -->
+  <line x1="50" y1="415" x2="750" y2="415" stroke="#ddd" stroke-width="1"/>
+  <text x="70" y="435" font-family="Arial" font-size="12" fill="#333333">1</text>
+  <text x="150" y="435" font-family="Arial" font-size="12" fill="#333333">Apr 15, 2025</text>
+  <text x="270" y="435" font-family="Arial" font-size="12" fill="#333333">$1,013.37</text>
+  <text x="370" y="435" font-family="Arial" font-size="12" fill="#333333">$138.37</text>
+  <text x="470" y="435" font-family="Arial" font-size="12" fill="#333333">$875.00</text>
+  <text x="570" y="435" font-family="Arial" font-size="12" fill="#333333">$0.00</text>
+  <text x="680" y="435" font-family="Arial" font-size="12" fill="#333333">$249,861.63</text>
+  
+  <line x1="50" y1="445" x2="750" y2="445" stroke="#ddd" stroke-width="1"/>
+  <text x="70" y="465" font-family="Arial" font-size="12" fill="#333333">2</text>
+  <text x="150" y="465" font-family="Arial" font-size="12" fill="#333333">May 15, 2025</text>
+  <text x="270" y="465" font-family="Arial" font-size="12" fill="#333333">$1,013.37</text>
+  <text x="370" y="465" font-family="Arial" font-size="12" fill="#333333">$138.86</text>
+  <text x="470" y="465" font-family="Arial" font-size="12" fill="#333333">$874.52</text>
+  <text x="570" y="465" font-family="Arial" font-size="12" fill="#333333">$0.00</text>
+  <text x="680" y="465" font-family="Arial" font-size="12" fill="#333333">$249,722.77</text>
+</svg>
