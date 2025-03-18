@@ -2,6 +2,7 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 const url = require('url');
+const os = require('os');
 
 // Default port (can be overridden with environment variable)
 const PORT = process.env.PORT || 3000;
@@ -65,8 +66,38 @@ const server = http.createServer((req, res) => {
   });
 });
 
-// Start server
-server.listen(PORT, () => {
-  console.log(`Server running at http://localhost:${PORT}/`);
-  console.log(`Press Ctrl+C to stop the server`);
+// Function to get all local IP addresses
+function getLocalIPs() {
+  const interfaces = os.networkInterfaces();
+  const addresses = [];
+  
+  for (const iface of Object.values(interfaces)) {
+    for (const alias of iface) {
+      // Skip internal and non-IPv4 addresses
+      if (alias.internal === false && alias.family === 'IPv4') {
+        addresses.push(alias.address);
+      }
+    }
+  }
+  
+  return addresses;
+}
+
+// Start server - bind to all interfaces (0.0.0.0) to make it accessible on LAN
+server.listen(PORT, '0.0.0.0', () => {
+  console.log(`\nServer running on port ${PORT}`);
+  console.log(`\nAccess the calculator using any of these addresses:`);
+  console.log(`  • Local: http://localhost:${PORT}/`);
+  
+  // Display all available local IP addresses for LAN access
+  const localIPs = getLocalIPs();
+  if (localIPs.length > 0) {
+    localIPs.forEach(ip => {
+      console.log(`  • LAN:   http://${ip}:${PORT}/`);
+    });
+  } else {
+    console.log(`  • No LAN IP addresses detected`);
+  }
+  
+  console.log(`\nPress Ctrl+C to stop the server`);
 });
