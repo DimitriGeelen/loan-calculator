@@ -34,9 +34,12 @@ Visit the [GitHub Pages site](https://dimitrigeelen.github.io/loan-calculator/) 
    - Simply run: `node server.js`
    - Or use npm: `npm start`
    - For development with auto-reload: `npm install` then `npm run dev`
-4. Open your browser and navigate to http://localhost:3000
+4. Access the calculator:
+   - Locally: Open your browser and navigate to http://localhost:3000
+   - From other devices on your network: When you start the server, it will display your local IP addresses. Use these addresses from any device on your network (e.g., http://192.168.1.100:3000)
 
 The web server provides the following benefits:
+- Access from any device on your local network
 - Proper MIME type handling for all file types
 - Better simulation of a production environment
 - Automatic reloading during development (with `npm run dev`)
