@@ -22,9 +22,25 @@ Visit the [GitHub Pages site](https://dimitrigeelen.github.io/loan-calculator/) 
 
 ### Local Usage
 
+#### Option 1: Direct Browser Open
 1. Clone this repository
 2. Open `index.html` in any modern web browser
 3. No installation or server required - runs completely in the browser
+
+#### Option 2: Using the Web Server
+1. Clone this repository
+2. Ensure you have Node.js installed (v14.0.0 or higher)
+3. Run the server using one of these methods:
+   - Simply run: `node server.js`
+   - Or use npm: `npm start`
+   - For development with auto-reload: `npm install` then `npm run dev`
+4. Open your browser and navigate to http://localhost:3000
+
+The web server provides the following benefits:
+- Proper MIME type handling for all file types
+- Better simulation of a production environment
+- Automatic reloading during development (with `npm run dev`)
+- Can be used to host the calculator on an internal network
 
 ### Google Sheets Templates
 
